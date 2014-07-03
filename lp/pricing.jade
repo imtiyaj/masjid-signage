@@ -1,0 +1,210 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width')
+        title Responsive Landing Page For iPhone / Android App
+        link(rel='stylesheet', href='css/normalize.css')
+        link(rel='stylesheet', href='css/foundation.min.css')
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='css/ie.css')
+        link(href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Cabin+Condensed:600', rel='stylesheet', type='text/css')
+        script(src='js/vendor/custom.modernizr.js')
+    body.gray
+        #top(data-magellan-expedition='fixed')
+            .row
+                .large-12.columns
+                    nav.top-bar
+                        ul.title-area
+                            li.name.logo
+                                a(href='index.html')
+                                    img(src='img/logo.png', alt='')
+                            li.toggle-topbar.menu-icon
+                                a(href='#')
+                                    span Menu
+                        section.top-bar-section
+                            ul#menu.right
+                                li(data-magellan-arrival='features')
+                                    a(href='index.html#features') Features
+                                li(data-magellan-arrival='product')
+                                    a(href='index.html#product') Product
+                                li(data-magellan-arrival='pricing')
+                                    a(href='pricing.html') Pricing
+                                li(data-magellan-arrival='contact')
+                                    a(href='index.html#contact') Contact Us
+        #first-option.section.features(data-magellan-destination='features')
+            .container
+                .row
+                    .large-12.columns.feature
+                        h3 Chose a setup based on your needs
+                .row
+                    .large-6.columns
+                            strong Standalone Mode
+                            p.small
+                                | If your need is confined to a location, you can manage the signage Player either by connecting a
+                                | Smartphone or from a Browser through the LAN.
+                    .large-6.columns
+                            strong Cloud Managed(Recommended)
+                            p.small
+                                | Sign up at the signage portal and you can centrally manage Players, upload Assets, Create
+                                | Content and deploy Playlists.
+        //#pricing.section.features(data-magellan-destination='pricing')
+            .row
+                .large-12.columns.feature
+                    h3 PiSignage Player Pricing Options
+                    p You can purchase from Ariem or Do it Yourself
+
+        #pricing-table.section.pricing.gray(data-magellan-destination='pricing')
+            .row
+                .large-12.columns.feature
+                    h2  Pricing Options
+                        p You can purchase from Ariem or Do it Yourself
+
+            .row.price-table
+                .large-4.columns
+                    ul.pricing-table
+                        li.title Plan Adventure
+                        li.description Do It Yourself
+                        li.price
+                        a.price-table-toggle + Show features
+                        ul.price-table-features
+                            li.bullet-item Purchase Rasberry Pi Model B, 8 GB class-10 SD card,
+                                |low profile SD card adapter,5V, 0.75A USB Power Supply,HDMI Cable, LAN Cable
+                            li.bullet-item Install masjid-signage  image
+                                | as per
+                                br
+                                a(href='https://github.com/ariemtech/piSignage') &nbsp instructions &nbsp
+                                br
+                                | or
+                                a(href='index.html#contact') &nbsp order prebuilt &nbsp
+                                | SD card
+                        li.cta-button
+                            a.button.secondary.radius(href='index.html#contact') Get Started
+                .large-4.columns
+                    ul.pricing-table.featured
+                        li.title Ready to Deploy
+                        li.description With Support
+                        li.price INR 11,999
+                        a.price-table-toggle + Show features
+                        ul.price-table-features
+                            li.bullet-item Raspberry Pi, Model B, 8GB Class-10 SD Card with micro-adapter
+                               |Fully tested, pre-configured
+                            li.bullet-item 1 year Support and Warranty
+                            //li.bullet-item And a lot more
+                        li.cta-button
+                            a.button.radius(href='index.html#contact') Order Now
+                .large-4.columns
+                    ul.pricing-table
+                        li.title Chrome Player
+                        li.description Universal Player
+                        li.price
+                        a.price-table-toggle + Show features
+                        ul.price-table-features
+                            li.bullet-item Download from Chrome Store
+                                |Experience masjid-ignage from your Browser
+                                |Use any PC with chrome browser as signage Player
+                            li.bullet-item
+                            //li.bullet-item And a lot more
+                        li.cta-button
+                            a.button.secondary.radius(href='index.html#contact') Get it Now
+            p.align-center Whichever option you chose, we will be glad to help you!
+                a(href='index.html#contact') &nbsp Contact us.
+
+        #server-pricing-table.section.pricing(data-magellan-destination='server-pricing')
+            .row
+                .large-12.columns.feature
+                    h2  masjid-signage Server Plans
+                        p Setup and Manage your signage Players without any hassle!
+
+            .row.price-table
+                .large-4.columns
+                    ul.pricing-table
+                        li.title FREE
+                        li.description Get Started
+                        li.price
+                        a.price-table-toggle + Show features
+                        ul.price-table-features
+                            li.bullet-item 3 Players
+                            li.bullet-item  2 GB Server Storage
+                            li.bullet-item  100 uploads per Month
+                        li.cta-button
+                            a.button.secondary.radius(href='index.html#contact') Sign Up
+                .large-4.columns
+                    ul.pricing-table.featured
+                        li.title Recommended
+                        li.description online support
+                        li.price $19/month
+                        a.price-table-toggle + Show features
+                        ul.price-table-features
+                            li.bullet-item 10 Players
+                            li.bullet-item  20 GB Server Storage
+                            li.bullet-item  Unlimited uploads per Month
+                        li.cta-button
+                            a.button.radius(href='index.html#contact') Start Free Trial
+                .large-4.columns
+                    ul.pricing-table
+                        li.title Custom
+                        li.description To Suit Your Needs
+                        li.price
+                        a.price-table-toggle + Show features
+                        ul.price-table-features
+                            li.bullet-item Unlimited Players
+                            li.bullet-item  Needed Server Storage
+                            li.bullet-item  Unlimited uploads per Month
+                        li.cta-button
+                            a.button.secondary.radius(href='index.html#contact') Contact Us
+
+        //#contact.section.contact.gray(data-magellan-destination='contact')
+            .row
+                .large-12.columns
+                    h2 Ready to Get Started?
+                    span.subheading
+                        | If you're interested, We'd love to hear from you. Drop us a line anytime!
+                    form#contactform(method='post', action='#')
+                        div
+                            label(for='name') Enter your name
+                            input#name.input-field(type='text', name='name', value='')
+                        div
+                            label(for='email') Enter your e-mail
+                            input#email.input-field(type='text', name='email', value='')
+                        div
+                            label Type Your Message
+                            textarea#message(name='message')
+                        a#button-send.button(href='#', title='Send Email', style='width: 100%;') Send E-Mail
+                        #success Your message has been successfully!
+                        #error Unable to send your message, please try later.
+        #contact1.section.contact.gray(data-magellan-destination='contact1')
+            .row
+                .large-12.columns
+                    h2 Ready to Get Started?
+                       a(href='index.html#contact')
+                        .label Contact Us
+
+        footer
+            .row
+                .large-6.columns
+                    ul.inline-list
+                        li.copyright 2014 © Ariem Technologies Pvt Ltd
+                //.large-6.columns
+                    ul.inline-list.social-media.right
+                        li
+                            a.icon.icon-facebook(href='http://www.facebook.com/EGrappler')
+                        li
+                            a.icon.icon-twitter(href='htp://twitter.com/egrappler')
+                        li
+                            a.icon.icon-googleplus(href='https://plus.google.com/102572598506883739879/posts')
+        script(type='text/javascript', src='js/jquery-1.8.2.min.js')
+        script(type='text/javascript', src='js/foundation.min.js')
+        script(type='text/javascript', src='js/functions.js')
+        script(type='text/javascript', src='js/jquery.nicescroll.js')
+        script(src='js/jquery.localscroll-1.2.7.js', type='text/javascript')
+        script(src='js/jquery.scrollTo-1.4.3.1.js', type='text/javascript')
+        link(rel='stylesheet', href='css/flexslider.css')
+        //
+           Flex slider
+        script(src='js/jquery.flexslider.js', type='text/javascript')
+        //
+           Flex slider
+        script(type='text/javascript', src='js/custom.js')
+       
