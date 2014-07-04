@@ -1,239 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Responsive Landing Page For iPhone / Android App</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ie.css">
-    <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Cabin+Condensed:600" rel="stylesheet" type="text/css">
-    <script src="js/vendor/custom.modernizr.js"></script>
-  </head>
-  <body class="gray">
-    <div id="top" data-magellan-expedition="fixed">
-      <div class="row">
-        <div class="large-12 columns">
-          <nav class="top-bar">
-            <ul class="title-area">
-              <li class="name logo"><a href="index.html"><img src="img/logo.png" alt=""></a></li>
-              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-            </ul>
-            <section class="top-bar-section">
-              <ul id="menu" class="right">
-                <li data-magellan-arrival="features"><a href="index.html#features">Features</a></li>
-                <li data-magellan-arrival="product"><a href="index.html#product">Product</a></li>
-                <li data-magellan-arrival="pricing"><a href="pricing.html">Pricing</a></li>
-                <li data-magellan-arrival="contact"><a href="index.html#contact">Contact Us</a></li>
-              </ul>
-            </section>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <div id="first-option" data-magellan-destination="features" class="section features">
-      <div class="container">
-        <div class="row">
-          <div class="large-12 columns feature">
-            <h3>Chose a setup based on your needs</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 columns"><strong>Standalone Mode</strong>
-            <p class="small">
-              If your need is confined to a location, you can manage the signage Player either by connecting a
-              Smartphone or from a Browser through the LAN.
-            </p>
-          </div>
-          <div class="large-6 columns"><strong>Cloud Managed(Recommended)</strong>
-            <p class="small">
-              Sign up at the signage portal and you can centrally manage Players, upload Assets, Create
-              Content and deploy Playlists.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--#pricing.section.features(data-magellan-destination='pricing')
-    .row
-        .large-12.columns.feature
-            h3 PiSignage Player Pricing Options
-            p You can purchase from Ariem or Do it Yourself
-            
-    -->
-    <div id="pricing-table" data-magellan-destination="pricing" class="section pricing gray">
-      <div class="row">
-        <div class="large-12 columns feature">
-          <h2> Pricing Options
-            <p>You can purchase from Ariem or Do it Yourself</p>
-          </h2>
-        </div>
-      </div>
-      <div class="row price-table">
-        <div class="large-4 columns">
-          <ul class="pricing-table">
-            <li class="title">Plan Adventure</li>
-            <li class="description">Do It Yourself</li>
-            <li class="price"></li><a class="price-table-toggle">+ Show features</a>
-            <ul class="price-table-features">
-              <li class="bullet-item">
-                Purchase Rasberry Pi Model B, 8 GB class-10 SD card,
-                low profile SD card adapter,5V, 0.75A USB Power Supply,HDMI Cable, LAN Cable
-              </li>
-              <li class="bullet-item">
-                Install masjid-signage  image
-                as per<br><a href="https://github.com/ariemtech/piSignage">&nbsp instructions &nbsp</a><br>or<a href="index.html#contact">&nbsp order prebuilt &nbsp</a>SD card
-              </li>
-            </ul>
-            <li class="cta-button"><a href="index.html#contact" class="button secondary radius">Get Started</a></li>
-          </ul>
-        </div>
-        <div class="large-4 columns">
-          <ul class="pricing-table featured">
-            <li class="title">Ready to Deploy</li>
-            <li class="description">With Support</li>
-            <li class="price">INR 11,999</li><a class="price-table-toggle">+ Show features</a>
-            <ul class="price-table-features">
-              <li class="bullet-item">
-                Raspberry Pi, Model B, 8GB Class-10 SD Card with micro-adapter
-                Fully tested, pre-configured
-              </li>
-              <li class="bullet-item">1 year Support and Warranty</li>
-              <!--li.bullet-item And a lot more-->
-            </ul>
-            <li class="cta-button"><a href="index.html#contact" class="button radius">Order Now</a></li>
-          </ul>
-        </div>
-        <div class="large-4 columns">
-          <ul class="pricing-table">
-            <li class="title">Chrome Player</li>
-            <li class="description">Universal Player</li>
-            <li class="price"></li><a class="price-table-toggle">+ Show features</a>
-            <ul class="price-table-features">
-              <li class="bullet-item">
-                Download from Chrome Store
-                Experience masjid-ignage from your Browser
-                Use any PC with chrome browser as signage Player
-              </li>
-              <li class="bullet-item"></li>
-              <!--li.bullet-item And a lot more-->
-            </ul>
-            <li class="cta-button"><a href="index.html#contact" class="button secondary radius">Get it Now</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="align-center">Whichever option you chose, we will be glad to help you!<a href="index.html#contact">&nbsp Contact us.</a></p>
-    </div>
-    <div id="server-pricing-table" data-magellan-destination="server-pricing" class="section pricing">
-      <div class="row">
-        <div class="large-12 columns feature">
-          <h2> masjid-signage Server Plans
-            <p>Setup and Manage your signage Players without any hassle!</p>
-          </h2>
-        </div>
-      </div>
-      <div class="row price-table">
-        <div class="large-4 columns">
-          <ul class="pricing-table">
-            <li class="title">FREE</li>
-            <li class="description">Get Started</li>
-            <li class="price"></li><a class="price-table-toggle">+ Show features</a>
-            <ul class="price-table-features">
-              <li class="bullet-item">3 Players</li>
-              <li class="bullet-item"> 2 GB Server Storage</li>
-              <li class="bullet-item"> 100 uploads per Month</li>
-            </ul>
-            <li class="cta-button"><a href="index.html#contact" class="button secondary radius">Sign Up</a></li>
-          </ul>
-        </div>
-        <div class="large-4 columns">
-          <ul class="pricing-table featured">
-            <li class="title">Recommended</li>
-            <li class="description">online support</li>
-            <li class="price">$19/month</li><a class="price-table-toggle">+ Show features</a>
-            <ul class="price-table-features">
-              <li class="bullet-item">10 Players</li>
-              <li class="bullet-item"> 20 GB Server Storage</li>
-              <li class="bullet-item"> Unlimited uploads per Month</li>
-            </ul>
-            <li class="cta-button"><a href="index.html#contact" class="button radius">Start Free Trial</a></li>
-          </ul>
-        </div>
-        <div class="large-4 columns">
-          <ul class="pricing-table">
-            <li class="title">Custom</li>
-            <li class="description">To Suit Your Needs</li>
-            <li class="price"></li><a class="price-table-toggle">+ Show features</a>
-            <ul class="price-table-features">
-              <li class="bullet-item">Unlimited Players</li>
-              <li class="bullet-item"> Needed Server Storage</li>
-              <li class="bullet-item"> Unlimited uploads per Month</li>
-            </ul>
-            <li class="cta-button"><a href="index.html#contact" class="button secondary radius">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!--#contact.section.contact.gray(data-magellan-destination='contact')
-    .row
-        .large-12.columns
-            h2 Ready to Get Started?
-            span.subheading
-                | If you're interested, We'd love to hear from you. Drop us a line anytime!
-            form#contactform(method='post', action='#')
-                div
-                    label(for='name') Enter your name
-                    input#name.input-field(type='text', name='name', value='')
-                div
-                    label(for='email') Enter your e-mail
-                    input#email.input-field(type='text', name='email', value='')
-                div
-                    label Type Your Message
-                    textarea#message(name='message')
-                a#button-send.button(href='#', title='Send Email', style='width: 100%;') Send E-Mail
-                #success Your message has been successfully!
-                #error Unable to send your message, please try later.
-    -->
-    <div id="contact1" data-magellan-destination="contact1" class="section contact gray">
-      <div class="row">
-        <div class="large-12 columns">
-          <h2>Ready to Get Started?<a href="index.html#contact">
-              <div class="label">Contact Us</div></a></h2>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="row">
-        <div class="large-6 columns">
-          <ul class="inline-list">
-            <li class="copyright">2014 © Ariem Technologies Pvt Ltd</li>
-          </ul>
-        </div>
-        <!--.large-6.columns
-        ul.inline-list.social-media.right
-            li
-                a.icon.icon-facebook(href='http://www.facebook.com/EGrappler')
-            li
-                a.icon.icon-twitter(href='htp://twitter.com/egrappler')
-            li
-                a.icon.icon-googleplus(href='https://plus.google.com/102572598506883739879/posts')
-        -->
-      </div>
-    </footer>
-    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="js/foundation.min.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
-    <script src="js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
-    <script src="js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/flexslider.css">
-    <!--Flex slider
-    -->
-    <script src="js/jquery.flexslider.js" type="text/javascript"></script>
-    <!--Flex slider
-    -->
-    <script type="text/javascript" src="js/custom.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Masjid Digital Signage</title><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/foundation.min.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/ie.css"><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Cabin+Condensed:600" rel="stylesheet" type="text/css"><script src="js/vendor/custom.modernizr.js"></script></head><body class="gray"><div id="top" data-magellan-expedition="fixed"><div class="row"><div class="large-12 columns"><nav class="top-bar"><ul class="title-area"><li class="name logo"><a href="index.html"><img src="img/logo.png" alt=""></a></li><li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li></ul><section class="top-bar-section"><ul id="menu" class="right"><li data-magellan-arrival="features"><a href="index.html#features">Features</a></li><li data-magellan-arrival="product"><a href="index.html#product">Product</a></li><li data-magellan-arrival="pricing"><a href="pricing.html">Pricing</a></li><li data-magellan-arrival="contact"><a href="index.html#contact">Contact Us</a></li></ul></section></nav></div></div></div><div id="first-option" data-magellan-destination="features" class="section features"><div class="container"><div class="row"><div class="large-12 columns feature"><h3>Chose a setup based on your needs</h3></div></div><div class="row"><div class="large-6 columns"><strong>Standalone Mode</strong><p class="small">If your need is confined to a location, you can manage the signage Player either by connecting a
+Smartphone or from a Browser through the LAN.</p></div><div class="large-6 columns"><strong>Cloud Managed(Recommended)</strong><p class="small">Sign up at the signage portal and you can centrally manage Players, upload Assets, Create
+Content and deploy Playlists.</p></div></div></div></div><!--#pricing.section.features(data-magellan-destination='pricing').row
+    .large-12.columns.feature
+        h3 PiSignage Player Pricing Options
+        p You can purchase from Ariem or Do it Yourself
+        --><div id="pricing-table" data-magellan-destination="pricing" class="section pricing gray"><div class="row"><div class="large-12 columns feature"><h2> Pricing Options<p>You can purchase from Ariem or Do it Yourself</p></h2></div></div><div class="row price-table"><div class="large-4 columns"><ul class="pricing-table"><li class="title">Plan Adventure</li><li class="description">Do It Yourself</li><li class="price"></li><a class="price-table-toggle">+ Show features</a><ul class="price-table-features"><li class="bullet-item">Purchase Rasberry Pi Model B, 8 GB class-10 SD card,
+low profile SD card adapter,5V, 0.75A USB Power Supply,HDMI Cable, LAN Cable</li><li class="bullet-item">Install masjid-signage  image
+as per<br><a href="https://github.com/ariemtech/piSignage">&nbsp instructions &nbsp</a><br>or<a href="index.html#contact">&nbsp order prebuilt &nbsp</a>SD card</li></ul><li class="cta-button"><a href="index.html#contact" class="button secondary radius">Get Started</a></li></ul></div><div class="large-4 columns"><ul class="pricing-table featured"><li class="title">Ready to Deploy</li><li class="description">With Support</li><li class="price">INR 11,999</li><a class="price-table-toggle">+ Show features</a><ul class="price-table-features"><li class="bullet-item">Raspberry Pi, Model B, 8GB Class-10 SD Card with micro-adapter
+Fully tested, pre-configured</li><li class="bullet-item">1 year Support and Warranty</li><!--li.bullet-item And a lot more--></ul><li class="cta-button"><a href="index.html#contact" class="button radius">Order Now</a></li></ul></div><div class="large-4 columns"><ul class="pricing-table"><li class="title">Chrome Player</li><li class="description">Universal Player</li><li class="price"></li><a class="price-table-toggle">+ Show features</a><ul class="price-table-features"><li class="bullet-item">Download from Chrome Store
+Experience masjid-ignage from your Browser
+Use any PC with chrome browser as signage Player</li><li class="bullet-item"></li><!--li.bullet-item And a lot more--></ul><li class="cta-button"><a href="index.html#contact" class="button secondary radius">Get it Now</a></li></ul></div></div><p class="align-center">Whichever option you chose, we will be glad to help you!<a href="index.html#contact">&nbsp Contact us.</a></p></div><div id="server-pricing-table" data-magellan-destination="server-pricing" class="section pricing"><div class="row"><div class="large-12 columns feature"><h2> masjid-signage Server Plans<p>Setup and Manage your signage Players without any hassle!</p></h2></div></div><div class="row price-table"><div class="large-4 columns"><ul class="pricing-table"><li class="title">FREE</li><li class="description">Get Started</li><li class="price"></li><a class="price-table-toggle">+ Show features</a><ul class="price-table-features"><li class="bullet-item">3 Players</li><li class="bullet-item"> 2 GB Server Storage</li><li class="bullet-item"> 100 uploads per Month</li></ul><li class="cta-button"><a href="index.html#contact" class="button secondary radius">Sign Up</a></li></ul></div><div class="large-4 columns"><ul class="pricing-table featured"><li class="title">Recommended</li><li class="description">online support</li><li class="price">$19/month</li><a class="price-table-toggle">+ Show features</a><ul class="price-table-features"><li class="bullet-item">10 Players</li><li class="bullet-item"> 20 GB Server Storage</li><li class="bullet-item"> Unlimited uploads per Month</li></ul><li class="cta-button"><a href="index.html#contact" class="button radius">Start Free Trial</a></li></ul></div><div class="large-4 columns"><ul class="pricing-table"><li class="title">Custom</li><li class="description">To Suit Your Needs</li><li class="price"></li><a class="price-table-toggle">+ Show features</a><ul class="price-table-features"><li class="bullet-item">Unlimited Players</li><li class="bullet-item"> Needed Server Storage</li><li class="bullet-item"> Unlimited uploads per Month</li></ul><li class="cta-button"><a href="index.html#contact" class="button secondary radius">Contact Us</a></li></ul></div></div></div><!--#contact.section.contact.gray(data-magellan-destination='contact').row
+    .large-12.columns
+        h2 Ready to Get Started?
+        span.subheading
+            | If you're interested, We'd love to hear from you. Drop us a line anytime!
+        form#contactform(method='post', action='#')
+            div
+                label(for='name') Enter your name
+                input#name.input-field(type='text', name='name', value='')
+            div
+                label(for='email') Enter your e-mail
+                input#email.input-field(type='text', name='email', value='')
+            div
+                label Type Your Message
+                textarea#message(name='message')
+            a#button-send.button(href='#', title='Send Email', style='width: 100%;') Send E-Mail
+            #success Your message has been successfully!
+            #error Unable to send your message, please try later.--><div id="contact1" data-magellan-destination="contact1" class="section contact gray"><div class="row"><div class="large-12 columns"><h2>Ready to Get Started?<a href="index.html#contact"><div class="label">Contact Us</div></a></h2></div></div></div><footer><div class="row"><div class="large-6 columns"><ul class="inline-list"><li class="copyright">2014 © Ariem Technologies Pvt Ltd</li></ul></div><!--.large-6.columnsul.inline-list.social-media.right
+    li
+        a.icon.icon-facebook(href='http://www.facebook.com/EGrappler')
+    li
+        a.icon.icon-twitter(href='htp://twitter.com/egrappler')
+    li
+        a.icon.icon-googleplus(href='https://plus.google.com/102572598506883739879/posts')--></div></footer><script type="text/javascript" src="js/jquery-1.8.2.min.js"></script><script type="text/javascript" src="js/foundation.min.js"></script><script type="text/javascript" src="js/functions.js"></script><script type="text/javascript" src="js/jquery.nicescroll.js"></script><script src="js/jquery.localscroll-1.2.7.js" type="text/javascript"></script><script src="js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script><link rel="stylesheet" href="css/flexslider.css"><!--Flex slider--><script src="js/jquery.flexslider.js" type="text/javascript"></script><!--Flex slider--><script type="text/javascript" src="js/custom.js"></script></body></html>
